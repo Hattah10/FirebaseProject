@@ -1,0 +1,146 @@
+.box{
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+
+.circle-wrap1, .circle-wrap2, .circle-wrap3, .circle-wrap4, .circle-wrap5, .circle-wrap6{
+width: 60px;
+height: 60px;
+margin: 40px;
+border-radius: 50%;
+position: relative;
+overflow: hidden;
+background-color: none;
+text-align: center;
+display: inline-block;
+}
+
+.circle-wrap1, .circle-wrap2, .circle-wrap3, .circle-wrap4, .circle-wrap5, .circle-wrap6{
+    transition: all 0.5s ease-out;
+}
+
+.circle-wrap1 {
+    top: 60px;
+    left: 29%;
+}
+
+.circle-wrap2 {
+    left: 25%;
+}
+
+.circle-wrap3 {
+    right: 10%;
+}
+
+.circle-wrap4 {
+    top: 20%;
+    right: 30%;
+}
+.circle-wrap5 {
+    top: 36%;
+    left: 10%;
+}
+.circle-wrap6 {
+    top: 50%;
+    right: 55%;
+}
+
+.circle1 {
+    position: absolute;
+    background: lightblue;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.circle2 {
+    position: absolute;
+    background:rgb(207, 234, 232);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    left: 30%; 
+}
+.circle3 {
+    background: lightblue;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px; 
+    position: absolute;
+    right: 30%;
+}
+.circle4 {
+    background: rgb(207, 234, 232);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+.circle5 {
+    background: lightblue;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px; 
+    position: absolute;
+    top: 36%;
+    left: 25%;
+}
+.circle6 {
+    background: lightblue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px; 
+    position: absolute;
+    top: 3%;
+    right: 40%;
+}
+
+/* @media (max-width: 530px) {
+   
+    .box{
+        z-index: -2;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 700px;
+        text-align: center;
+    }
+   
+        .circle-wrap1 {
+            top: 10%;
+            left: 0%;
+        }
+        
+        .circle-wrap2 {
+            left: 29%;
+            top: 20%;
+        }
+        
+        .circle-wrap3 {
+            top: 0%;
+            right: 20%;
+        }
+        
+        .circle-wrap4 {
+            top: 18%;
+            right: 10%;
+        }
+        .circle-wrap5 {
+            top: 36%;
+            left: 20%;
+        }
+        .circle-wrap6 {
+            top: 50%;
+            right: 45%;
+        }   
+} */
