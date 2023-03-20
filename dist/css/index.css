@@ -28,7 +28,7 @@ body {
     -webkit-text-fill-color: transparent;
   }
 
-  .container {
+  .section .container {
     min-height: 60vh;
     width: 60%;
     background-color:rgb(255, 255, 255);
@@ -42,7 +42,7 @@ body {
     z-index: 1;
   }
 
-  .container:hover{
+  .section .container:hover{
     background-color:rgb(240, 253, 253);
     transform:scale(1.2);
   }
@@ -55,6 +55,12 @@ body {
     flex: 50%;
     padding: 10px;
     width: 50%; 
+  }
+
+  .text-paragraph{
+    font-size: 1rem;
+    text-align: justify;
+    padding-right: 25px;
   }
 
  button.buttons {
@@ -98,6 +104,50 @@ body {
   .column p{
     text-align: left;
   }
+
+  .img-aboutme {
+    width: 100%;
+    position: absolute;
+  }
+
+  .container1 {
+    margin: 0%;
+    padding-left: 0%; 
+ }
+
+ .overlay-container {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(255, 249, 249);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 40%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+  right: 0%;
+}
+hr.line{
+  border: 15px solid linear-gradient(90deg,rgb(131, 131, 200),lightblue,rgb(207, 234, 232),rgb(140, 206, 175));
+  width: 50%;
+  position: absolute;
+  top: 90px;
+}
+ .about {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  transform: translate(-50%, -50%);
+ }
+
+ .container1:hover .overlay-container {
+  opacity: 1;
+}
+
   footer {
         background-color:rgb(205, 215, 224);
         left: 0;

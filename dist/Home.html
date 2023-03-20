@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/menu.css"> 
         <!-- index css-->
     <link rel="stylesheet" href="css/circle.css"> 
+    <link rel="stylesheet" href="css/footer.css"> 
+
 
     <script defer src="./bundle.js"></script>
 </head>
@@ -40,12 +42,12 @@
               
                       </h3>
                           <ul>
-                          <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
-                            <li><a href=""><i class="fas fa-user"></i>About</a></li>
+                          <li><a href="#home" onclick="document.location='Home.html'"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="#" onClick="window.location='#about'"><i class="fas fa-user"></i>About</a></li>
                             <!-- <li><a href="emergency.php"><i class="fas fa-clipboard-user"></i> Emergency</a></li> -->
                             <li><a href=""><i class="fas fa-gear"></i> Account Settings</a></li>
                            <!-- <li><a href="#"><i class="fas fa-sliders-h"></i> Settings</a></li>  -->
-                            <li><a href="index.html" target="_self"><i class="fas fa-sign-out-alt"></i> Signout</a></li>
+                            <li><a href="index.html" onclick="document.location='index.html'"><i class="fas fa-sign-out-alt"></i> Signout</a></li>
                         </ul>
                       </div>
                       
@@ -82,20 +84,40 @@
     </div>
 
     <!-- divide the page by section -->
-    <div class="section"> 
+    <div class="section" id="home"> 
         <div> 
         <h1>Hi, I'm Norhata.</h1>
-        <p>I am Getting Started with Firebase and Git</p>
+        <p>I am currently learning Firebase, <br> so come and join me on my journey. <br> Learn more About Me.</p>
         <p></p>
         </div>
 
     </div>
 
+    <!-- About Me -->
+ <div class="section" >
+        <div class="container container1" style="padding-left: 0px; padding-top:0px;">
+        
+            <div class="img-aboutme">
+            <img class="about" src="image/moon.JPG" id="about" alt="moon">
+            </div>
+             <div class="overlay-container">
+                <h1 style="font-weight: bolder;">About Me </h1>
+                <hr class="line">
+                <p class="text-paragraph"> Hello, Again I am Norhata T. Sampaco. I am currently a junior student of Bachelor of Science in Information Technology majoring in Database. </p>
+            </div>
+           
+        </div>
+ </div>
+
+
+
     <div class="section">
         <div class="container">
             <div class="column column1">
-                <h1>Recent <br> Project </h1>
-                <p> jeepneyiligan</p>
+                <h1>Recent Project </h1>
+                <p style="font-weight: bold;"> Jeepney Iligan Web App</p>
+                <p class="text-paragraph"> Jeepney.Ilgn is a web-based navigation system where commuters can view the route of jeepney lines in Iligan.</p>
+
 
                 <button class="buttons">Read more <i class="fas fa-solid fa-arrow-right"></i> </button>
             </div>
@@ -110,7 +132,11 @@
     
     </div>
 
-    <div class="section">
+   
+    
+    </div>
+
+    <!-- <div class="section">
         <div class="container">
             <div class="column column1">
                 <h1>Recent <br> Project </h1>
@@ -126,31 +152,35 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
-    <div class="section">
+    <!-- Site footer -->
+    <footer class="site-footer">
         <div class="container">
-            <div class="column column1">
-                <h1>Recent <br> Project </h1>
-                <p> jeepneyiligan</p>
-
-                <button class="buttons">Read more <i class="fas fa-solid fa-arrow-right"></i> </button>
+          <div class="row">
+            <div class="">
+              <p class="copyright-text">Get Connected With Me in Social Networks! 
+           <!-- <a href="#">Scanfcode</a>. -->
+              </p>
             </div>
-
-            <div class="column">
-                <div class="img-wrap" id="img-slant">
-                <img src="image/jeepneyiligan.png" alt="jeepneyiligan">
-                </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="google" href="#"><i class="fa fa-google"></i></a></li>   
+              </ul>
             </div>
+          </div>
         </div>
+  </footer>
 
-    </div>
-
-    <footer>
+    <!-- <footer>
         <div class="footer"> 
             <p>Footer</p>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 <script src="js/circle.js"></script>
