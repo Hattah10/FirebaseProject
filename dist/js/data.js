@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore, connectFirestoreEmulator} from "firebase/firestore";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+import { getFirestore, collection, addDoc,  connectFirestoreEmulator } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -24,20 +24,15 @@ const analytics = getAnalytics(app);
 console.log(app)
 
 const db = getFirestore(app);
-connectFirestoreEmulator(db, 'localhost', 8080);
+const firestoreemulate = connectFirestoreEmulator(db, 'localhost', 8080);
 
-// const savebtns = document.getElementById("saves")
-// savebtns.addEventListener("click", async () => {
-//   try {
-//     const docRef = await addDoc(collection(db, "users"), {
-//       first: "Alan",
-//       middle: "Mathison",
-//       last: "Turing",
-//       born: 1912
-//     });
-  
-//     console.log("Document written with ID: ", docRef.id);
-//   } catch (e) {
-//     console.error("Error adding document: ", e);
-//   }
-// });
+const savebtn = document.querySelector('.saves')
+savebtn.addEventListener("click", async () => {
+  const docRef = await addDoc(collection(db, "users"), {
+    first: "Ada",
+    last: "Lovelace",
+    born: 1815
+  });
+  console.log("Document written with ID: ", docRef.id);
+
+});

@@ -166,6 +166,32 @@ hr.line{
     margin: auto;
   }
 
+  .container .blog-background img{
+    width: 100%;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .blog-header{
+    text-align: center;
+    width: 50%;
+    margin-top: 90px;
+    margin-left: 40px;
+    font-family: cursive;
+  }
+
+  .blogbtn{
+    text-decoration: none;
+    color: rgb(65, 148, 148);
+    width: 50%;
+  }
+  /* .section .blog-background{
+    background: url("image/blog-background.jpg");
+
+  } */
+
 /* @media (max-width: 530px) {
 
   .section{

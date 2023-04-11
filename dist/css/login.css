@@ -226,3 +226,24 @@ input {
   height: 40px;
   width: 40px;
 }
+
+a.facebook:hover
+{
+  border-width: 3px;
+  border-color:#3b5998
+}
+a.twitter:hover
+{
+  border-width: 3px;
+  border-color:#00aced
+}
+a.instagram:hover
+{
+  border-width: 3px;
+  border-color:#ea4c89
+}
+a.google:hover
+{
+  border-width: 3px;
+  border-color:#ea4c89
+}

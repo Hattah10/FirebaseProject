@@ -1,0 +1,65 @@
+/* view button */
+
+
+.icon_view{
+        position: absolute;
+         margin-left: -100px;
+        text-decoration: none;
+        color: #000000;
+        margin-right: 5px;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    
+.icon_view:hover {
+     /* box-shadow: 10 0 20px rgb(200, 200, 201);
+     transform:scale(1.2); */
+    }
+
+
+
+    .deletebtn, .editbtn{
+        background-color: white;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+.editbtn{
+margin-left: 840px;
+}
+
+.updatebtn{
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left:770px;
+    cursor: pointer;
+}
+
+.deletebtn{
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 50px;
+    z-index: 5;
+
+}
+
+.published {
+font-style: italic;
+color: #a5a5a5;
+padding-left: 10px;
+
+}
